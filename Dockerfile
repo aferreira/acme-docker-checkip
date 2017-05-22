@@ -2,7 +2,7 @@
 FROM alpine:latest
 
 ENV PERL_CPANM_OPT="--curl --no-wget --no-lwp --no-man-pages" \
-    PERL_PRIVLIB=/usr/share/perl5/core_perl \
+    PERL_PRIVLIB=/usr/local/share/perl5/site_perl \
     USER=perl
 
 RUN apk add --no-cache \
