@@ -37,13 +37,13 @@ The application mimicks services like
 
 with an output like
 
-   HTTP/1.1 200 OK
-   Content-Type: text/plain
-   Server: Mojolicious (Perl)
-   Content-Length: 11
-   Date: Mon, 22 May 2017 17:35:36 GMT
+    HTTP/1.1 200 OK
+    Content-Type: text/plain
+    Server: Mojolicious (Perl)
+    Content-Length: 11
+    Date: Mon, 22 May 2017 17:35:36 GMT
    
-   172.17.0.1
+    172.17.0.1
 
 The IP is reported from the point of view of the network
 where the application is running. That is why it is only useful
