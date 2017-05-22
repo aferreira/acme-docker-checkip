@@ -17,7 +17,11 @@ The application mimicks services like
 
 ### BUILDING
 
+    # From a local directory
     docker build -t checkip .
+
+    # Or, directly from github
+    docker build -t checkip https://github.com/aferreira/acme-docker-checkip.git
 
 ### RUNNING
 
