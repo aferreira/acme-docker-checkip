@@ -11,7 +11,10 @@ RUN apk add --no-cache \
       perl && \
     (curl -L https://cpanmin.us | perl - App::cpanminus) && \
     cpanm Mojolicious && \
-    adduser -D ${USER}
+    adduser -D ${USER} && \
+    apk del --no-cache \
+      curl \
+      make
 
 COPY lib/CheckIP.pm     $PERL_PRIVLIB/
 COPY script/checkip_app /home/$USER/
