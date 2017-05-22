@@ -9,8 +9,7 @@ RUN apk add --no-cache \
       curl \
       make \
       perl && \
-    (curl -L https://cpanmin.us | perl - App::cpanminus) && \
-    cpanm Mojolicious && \
+    (curl -L https://cpanmin.us | perl - Mojolicious) && \
     adduser -D ${USER} && \
     apk del --no-cache \
       curl \
